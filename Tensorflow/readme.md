@@ -1,1 +1,3 @@
-Modele French to Target language entraine avec le framework tensorflow.
+
+Tensorflow notebook pour entraine French to Target Language
+
