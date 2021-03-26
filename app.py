@@ -2,16 +2,14 @@ from core import translate, load_model
 from pprint import pprint
 MODEL_DIR = '.'
 
-def loading():
-    global confo
-    confo = load_model("models/fr_ewe_bpe4000_transformer")
-#     pprint(confo)
+def loading(model_dir):
+    confo = load_model(model_dir)
+    return confo
 
 
-def traduis(message):
+def traduis(message, confo):
    
     answer = translate(message, **confo)
     return answer
     
-loading()
-# print(traduis("Wàhálà mélòó ni mo lè là kọjá láti"))
+
